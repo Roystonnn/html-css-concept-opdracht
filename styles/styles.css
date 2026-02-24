@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav {
+    display: flex;
+    border: 2px dashed orange;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    border: 2px dashed red;
+    justify-content: space-between;
+    flex-basis: 400px;
+    margin-right: 80px;
+}
+
+.header-wrapper {
+    display: flex;
+    border: 2px dashed blue;
+    flex-direction: row;
+    flex-basis: 350px;
+    justify-content: center;
+    padding-bottom: 140px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    text-align: center;
+    flex-basis: 500px;
+}
