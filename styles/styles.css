@@ -1,11 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #4845E4;
+    --main-text-color: #fff;
+    --secondary-text-color: #5722CD;
+    --button-color: #ED4385;
+    --standard-text: #0C0C0C;
+    --floating-text-color: #F2F0FF;
+    --background-project-color: #F3F6F9;
+    --service-tile-color: #7A7A7A;
+}
+
+body h1 {
+    font-family: 'Merriweather', serif;
+    color: var(--main-text-color);
+}
+
+body p, ul, h2, h3, h4, h5, h6 {
+    color: var(--main-text-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
 header {
     display: flex;
     flex-direction: column;
+    background-color: var(--primary);
+}
+
+header img {
+    height: 80px;
 }
 
 .header-nav {
     display: flex;
-    border: 2px dashed orange;
     flex-direction: row;
     justify-content: flex-end;
 }
@@ -14,7 +42,6 @@ header {
     list-style: none;
     display: flex;
     flex-direction: row;
-    border: 2px dashed red;
     justify-content: space-between;
     flex-basis: 400px;
     margin-right: 80px;
@@ -22,11 +49,9 @@ header {
 
 .header-wrapper {
     display: flex;
-    border: 2px dashed blue;
     flex-direction: row;
-    flex-basis: 350px;
+    flex-basis: 270px;
     justify-content: center;
-    padding-bottom: 140px;
 }
 
 .header-content {
@@ -34,7 +59,19 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 10px;
+    row-gap: 20px;
     text-align: center;
-    flex-basis: 500px;
+    flex-basis: 570px;
+}
+
+header button {
+    border-radius: 30px;
+    padding: 16px;
+    font-size: 11px;
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+}
+
+.section-one {
+    color: var(--secondary-text-color);
 }
