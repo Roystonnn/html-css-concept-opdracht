@@ -11,17 +11,22 @@
     --service-tile-color: #7A7A7A;
 }
 
-body h1 {
+body h1, h2, h4, h5, h6 {
     font-family: 'Merriweather', serif;
     color: var(--main-text-color);
 }
 
-body p, ul, h2, h3, h4, h5, h6 {
+body ul {
     color: var(--main-text-color);
     font-family: Roboto, sans-serif;
     font-weight: 400;
 }
 
+body p, h3 {
+    color: var(--standard-text);
+}
+
+/*///////////////////content in de header///////////////////*/
 header {
     display: flex;
     flex-direction: column;
@@ -72,6 +77,52 @@ header button {
     color: var(--main-text-color);
 }
 
+
+
+/*/////////////////// einde van de content in de header ///////////////////*/
+
+/*/////////////////// content van section one ///////////////////*/
+
 .section-one {
     color: var(--secondary-text-color);
 }
+
+section h2 {
+    color: var(--secondary-text-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-one-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-basis: 500px;
+}
+
+.section-one-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    text-align: center;
+    flex-basis: 650px;
+}
+
+.section-one-p {
+    margin-top: 50px;
+}
+
+.section-one-a {
+    color: blue;
+    text-decoration: none;
+}
+
+/*///////////////////section one einde ///////////////////*/
+
+/*/////////////////// articles in de section two ///////////////////*/
+
