@@ -199,4 +199,7 @@ h3 {
 
 .view-project-a {
     margin-top: 30px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
 }
