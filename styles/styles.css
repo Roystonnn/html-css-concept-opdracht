@@ -169,10 +169,7 @@ section {
 
 .article-content-image {
     max-width: 100%;
-}
-
-span img {
-    box-shadow:
+    box-shadow:  5px 5px 10px grey;
 }
 
 h3 {
