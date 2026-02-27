@@ -144,8 +144,8 @@ section {
     flex-direction: column;
     justify-content: center;
     flex-basis: 340px;
-    margin-right: 20px;
     flex-shrink: 0;
+    margin-left: 50px;
 }
 
 .h2-image {
@@ -188,7 +188,6 @@ h3 {
 article:nth-child(even) {
     display: flex;
     flex-direction: row-reverse;
-    margin: 0;
 }
 
 .view-project-a {
