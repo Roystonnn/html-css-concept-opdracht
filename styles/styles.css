@@ -271,7 +271,7 @@ form {
 .form-button {
     border-radius: 30px;
     padding: 16px;
-    font-size: 11px;
+    font-size: 14px;
     background-color: var(--button-color);
     color: var(--main-text-color);
     width: 20%;
