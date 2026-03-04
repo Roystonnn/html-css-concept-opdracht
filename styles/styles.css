@@ -1,11 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary: #4845E4;
+    --main-text-color: #fff;
+    --secondary-text-color: #5722CD;
+    --button-color: #ED4385;
+    --standard-text: #0C0C0C;
+    --floating-text-color: #F2F0FF;
+    --background-project-color: #F3F6F9;
+    --service-tile-color: #7A7A7A;
+}
+
+body h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: var(--main-text-color);
+}
+
+body ul {
+    color: var(--main-text-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+body p, h3 {
+    color: var(--standard-text);
+}
+
+header p, .section-four p, .section-four h1 {
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+/*///////////////////content in de header///////////////////*/
 header {
     display: flex;
     flex-direction: column;
+    background-color: var(--primary);
+}
+
+header img {
+    height: 80px;
 }
 
 .header-nav {
     display: flex;
-    border: 2px dashed orange;
     flex-direction: row;
     justify-content: flex-end;
 }
@@ -14,7 +52,6 @@ header {
     list-style: none;
     display: flex;
     flex-direction: row;
-    border: 2px dashed red;
     justify-content: space-between;
     flex-basis: 400px;
     margin-right: 80px;
@@ -22,11 +59,9 @@ header {
 
 .header-wrapper {
     display: flex;
-    border: 2px dashed blue;
     flex-direction: row;
-    flex-basis: 350px;
+    flex-basis: 270px;
     justify-content: center;
-    padding-bottom: 140px;
 }
 
 .header-content {
@@ -34,7 +69,250 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 10px;
+    row-gap: 20px;
     text-align: center;
+    flex-basis: 570px;
+}
+
+header button {
+    border-radius: 30px;
+    padding: 16px;
+    font-size: 11px;
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+}
+
+
+
+/*/////////////////// einde van de content in de header ///////////////////*/
+
+/*/////////////////// content van section one ///////////////////*/
+
+.section-one {
+    color: var(--secondary-text-color);
+}
+
+section h2 {
+    color: var(--secondary-text-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-one-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     flex-basis: 500px;
 }
+
+.section-one-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    text-align: center;
+    flex-basis: 650px;
+}
+
+.section-one-p {
+    margin-top: 50px;
+}
+
+.section-one-a {
+    color: blue;
+    text-decoration: none;
+}
+
+/*///////////////////section one einde ///////////////////*/
+
+/*/////////////////// articles in de section two ///////////////////*/
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.article-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+.article-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 340px;
+    flex-shrink: 0;
+    margin-left: 50px;
+}
+
+.h2-image {
+    height: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50px;
+    margin: 10px 0 30px 0;
+}
+
+.article-content-image-wrapper {
+    flex-basis: 830px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.article-content-image {
+    max-width: 100%;
+    box-shadow:  5px 5px 10px grey;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.article-p {
+    font-size: 18px;
+}
+
+.section-two {
+    background-color: var(--background-project-color);
+    padding: 100px 0;
+}
+
+.article-wrapper:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.view-project-a {
+    margin-top: 30px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/*/////////////////// section two einde ///////////////////*/
+
+/*/////////////////// Service articles (section-three) ///////////////////*/
+
+.service-three {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    padding: 30px;
+    row-gap: 15px;
+    border: 1px solid var(--primary);
+    box-shadow: 5px 5px 10px lightgrey;
+}
+
+.service-image {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    margin-right: 290px;
+}
+
+/*/////////////////// section three einde ///////////////////*/
+
+/*/////////////////// section four ///////////////////*/
+
+.section-four {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--primary);
+    padding: 100px 0;
+
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-basis: 660px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 660px;
+    row-gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+form input {
+    padding: 10px;
+}
+
+form label {
+    color: var(--main-text-color);
+}
+
+textarea {
+    padding: 10px;
+}
+
+.form-button {
+    border-radius: 30px;
+    padding: 16px;
+    font-size: 11px;
+    background-color: var(--button-color);
+    color: var(--main-text-color);
+    width: 20%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/*/////////////////// section four einde ///////////////////*/
+
+/*/////////////////// footer ///////////////////*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+footer p {
+    color: var(--main-text-color);
+    font-size: 14px;
+}
+
+/*/////////////////// einde footer ///////////////////*/
